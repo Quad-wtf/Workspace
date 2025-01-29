@@ -1,0 +1,109 @@
+.chatList {
+   position: relative;
+   flex: 1;
+   overflow: auto;
+ 
+   .search {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding: 20px;
+ 
+     .searchBar {
+       flex: 1;
+       background-color: rgba(17, 25, 40, 0.5);
+       display: flex;
+       align-items: center;
+       gap: 20px;
+       border-radius: 10px;
+       padding: 10px;
+ 
+       input {
+         background-color: transparent;
+         border: none;
+         outline: none;
+         color: white;
+         flex: 1;
+       }
+ 
+       img {
+         width: 20px;
+         height: 20px;
+       }
+     }
+ 
+     .add {
+       width: 36px;
+       height: 36px;
+       background-color: rgba(17, 25, 40, 0.5);
+       padding: 10px;
+       border-radius: 10px;
+       cursor: pointer;
+     }
+   }
+ 
+   .addUser {
+     width: max-content;
+     height: max-content;
+     padding: 30px;
+     background-color: rgba(17, 25, 40, 0.781);
+     border-radius: 10px;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     opacity: 0;
+     transform: scale(0.8);
+     pointer-events: none;
+     transition: opacity 0.5s ease, transform 0.5s ease;
+   }
+ 
+   .addUser.visible {
+     opacity: 1;
+     transform: scale(1);
+     pointer-events: auto;
+   }
+ 
+   .addUser form {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+   }
+ 
+   .addUser form input {
+     padding: 16px 20px;
+     border-radius: 10px;
+     border: 1px solid #ddd;
+     outline: none;
+     font-size: 16px;
+     transition: box-shadow 0.3s ease, border-color 0.3s ease;
+   }
+ 
+   .addUser form input:focus {
+     border-color: #1a73e8;
+     box-shadow: 0 0 8px rgba(26, 115, 232, 0.4);
+   }
+ 
+   .addUser form button {
+     padding: 16px 20px;
+     border-radius: 10px;
+     background-color: transparent;
+     color: #1a73e8;
+     border: 1px solid #1a73e8;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+   }
+ 
+   .addUser form button:hover {
+     background-color: #1a73e8;
+     color: white;
+   }
+ 
+   .addUser form button:active {
+     transform: scale(0.95);
+   }
+ }
+ 

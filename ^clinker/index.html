@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stinker💩</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="main">
+            <div class="left">
+                <p>Lil' Stinkers <br /><span class="Stinkers pink-text">50000</span></p>
+                <div class="poop-image-container">
+                    <img src="./assets/poop-emoji.png" class="clicker-image" onclick="incrementStinkers(event)" draggable="false">
+                </div>
+            </div>
+            <div class="right">
+                <div class="upgrade" onclick="buyClicky()">
+                    <div class="left-section">
+                        <img src="./assets/cursor.png" class="cursor-shop" draggable="false">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Clicky Stinker</h4>
+                        <div>
+                            
+                        </div>
+                        <div class="cost-info">
+                            <p class="costText"><span class="clickyCost">10</span></p>
+                            <img src="./assets/poop-emoji.png" class="value-poop" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="clickyLevel">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clickyIncrease">1</span> per click
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyPickaxe()">
+                    <div class="left-section">
+                        <img src="./assets/pickaxe.png" class="cursor-shop" draggable="false">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Pickaxe</h4>
+                        <div>
+                            
+                        </div>
+                        <div class="cost-info">
+                            <p class="costText"><span class="pickaxeCost">50</span></p>
+                            <img src="./assets/poop-emoji.png" class="value-poop" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="pickaxeLevel">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="pickaxeIncrease">4</span> Stinkers per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyMiner()">
+                    <div class="left-section">
+                        <img src="./assets/miner.png" class="cursor-shop" draggable="false">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Miner</h4>
+                        <div>
+                            
+                        </div>
+                        <div class="cost-info">
+                            <p class="costText"><span class="minerCost">180</span></p>
+                            <img src="./assets/poop-emoji.png" class="value-poop" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="minerLevel">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="minerIncrease">12</span> Stinkers per second
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyFactory()">
+                    <div class="left-section">
+                        <img src="./assets/factory.png" class="cursor-shop" draggable="false">
+                    </div>
+                    <div class="middle-section">
+                        <h4>Factory</h4>
+                        <div>
+                            
+                        </div>
+                        <div class="cost-info">
+                            <p class="costText"><span class="factoryCost">400</span></p>
+                            <img src="./assets/poop-emoji.png" class="value-poop" draggable="false">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="factoryLevel">0</span>
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="factoryIncrease">40</span> Stinkers per second
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="texts">
+                <p class="pink-text">SPC(stinkers per click): <span id="spcText">1</span></p>
+                <p class="pink-text">SPS(stinkers per second): <span id="spsText">0</span></p>
+            </div>
+        </div>
+
+        <div class="utilButtons">
+            <button class="utilButton" onclick="save()">
+                Save
+            </button>
+            <button class="utilButton" onclick="load()">
+                Load
+            </button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
